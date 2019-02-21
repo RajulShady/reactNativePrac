@@ -52,21 +52,22 @@ class EmailPage extends Component{
             onChangeText={text => this.setState({ email: text} )}
             placeholder='  Enter Email'
             underlineColorAndroid='#d7d7d7'
-            style={{ marginTop: '14.41%', marginLeft: 29, marginRight: 28, paddingBottom: 10}}
+            color="#646464"
+            style={{ marginTop: 18, marginLeft: 14, marginRight: 14, paddingBottom: 10, fontSize: 13, color: "#646464"}}
 
             />
-            <Text style={{marginTop: '1.60%', fontSize: 10, lineHeight:13, letterSpacing: 0.013, color: '#b5b5b5', marginLeft: 29, marginRight: 81}}>
+            <Text style={{marginTop: '1.5%', fontSize: 8, lineHeight:13, letterSpacing: 0.013, color: '#b5b5b5', marginLeft: 20, marginRight: 14}}>
              By signing up, you confirm that you agree to our Terms of Use and read and understood
              our Privacy Policy
             </Text>
             <TouchableOpacity style={styles.btn} onPress={this.handleClick}>
               <Text style={styles.btnText}>Next</Text>
             </TouchableOpacity>
-
+{/* 
             <View style={styles.line}>
                <View style={{backgroundColor: '#c6c2c2', height: 1, flex: 1, alignSelf: 'center'}} />
                <View style={{backgroundColor: '#c6c2c2', height: 1, flex: 1, alignSelf: 'center'}} />
-           </View>
+           </View> */}
 
             <View style={styles.loginLine}>
               <Text style={{textAlign: 'center'}}>
@@ -107,12 +108,15 @@ const styles = StyleSheet.create({
    borderColor: '#d7d7d7',
    borderWidth: 1,
    padding: 10,
+   paddingBottom: 6,
+   paddingTop: 6,
    width: 150,
    textAlign: 'center',
    fontWeight: 'bold',
-   fontSize: 17,
+   fontSize: 12,
    letterSpacing: 0.16,
-   lineHeight: 21
+   lineHeight: 21,
+   marginTop: 20
  },
  tabs: {
    flexDirection: 'row',
@@ -147,7 +151,9 @@ const styles = StyleSheet.create({
  },
  loginLine: {
    marginTop: '3.55%',
-   marginBottom: 28
+   marginBottom: 28,
+   flex: 1,
+   justifyContent: 'flex-end',
  }
 })
 
